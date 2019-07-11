@@ -9,4 +9,5 @@
 *.tex.latexmain
 paper.pdf
 paper.bbl
-auto
+_region_.*
+auto/
