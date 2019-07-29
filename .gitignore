@@ -5,9 +5,11 @@
 *.fls
 *.log
 *.run.xml
+*.swp
 *.synctex.gz
 *.tex.latexmain
-paper.pdf
-paper.bbl
-_region_.*
 auto/
+.initialized
+paper.bbl
+paper.pdf
+_region_.*
