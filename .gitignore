@@ -1,4 +1,3 @@
-*~
 *.aux
 *.bcf
 *.blg
@@ -9,8 +8,10 @@
 *.swp
 *.synctex.gz
 *.tex.latexmain
-auto/
+*~
+.DS_Store
 .initialized
+_region_.*
+auto/
 paper.bbl
 paper.pdf
-_region_.*
