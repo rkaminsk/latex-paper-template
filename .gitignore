@@ -8,6 +8,7 @@
 *.run.xml
 *.swp
 *.synctex.gz
+*.toc
 *.tex.latexmain
 *~
 .DS_Store
