@@ -6,6 +6,7 @@
 *.log
 *.out
 *.run.xml
+*.snm
 *.swp
 *.synctex.gz
 *.tex.bak
