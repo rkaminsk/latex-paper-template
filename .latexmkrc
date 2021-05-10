@@ -11,6 +11,6 @@ $interaction = "nonstopmode";
 $ENV{"TEXMFHOME"} = "?";
 
 # Reset all search paths
-$ENV{"BIBINPUTS"} = "./include//:";
-$ENV{"BSTINPUTS"} = "./include//:";
-$ENV{"TEXINPUTS"} = "./include//:";
+ensure_path( 'BIBINPUTS', './include//' );
+ensure_path( 'BSTINPUTS', './include//' );
+ensure_path( 'TEXINPUTS', './include//' );
