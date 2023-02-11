@@ -9,20 +9,21 @@ push @extra_pdflatex_options, '-synctex=1';
 # variable or setting it to the empty string would have LaTeX search the
 # default texmf directory location, which we can only avoid by using an
 # invalid path)
-$ENV{'TEXMFHOME'} = '?';
 
 # Reset all search paths
-delete $ENV{'BIBINPUTS'};
-delete $ENV{'BSTINPUTS'};
-delete $ENV{'TEXINPUTS'};
-
-if ( defined &ensure_path ) {
+if ( defined &ensure_path ){
+    delete $ENV{'TEXMFHOME'};
+    delete $ENV{'BIBINPUTS'};
+    delete $ENV{'BSTINPUTS'};
+    delete $ENV{'TEXINPUTS'};
     ensure_path('BIBINPUTS', './include//');
     ensure_path('BSTINPUTS', './include//');
     ensure_path('TEXINPUTS', './include//');
 }
-else {
+else{
+    $ENV{'TEXMFHOME'} = '?';
     $ENV{'BIBINPUTS'} = './include//:';
     $ENV{'BSTINPUTS'} = './include//:';
     $ENV{'TEXINPUTS'} = './include//:';
 }
+
