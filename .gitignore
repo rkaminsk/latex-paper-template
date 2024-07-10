@@ -5,10 +5,12 @@
 *.fls
 *.log
 *.out
+*.pag
 *.run.xml
 *.snm
 *.swp
 *.synctex.gz
+*.synctex(busy)
 *.tex.bak
 *.tex.latexmain
 *.toc
